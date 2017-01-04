@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BlogRails</title>
+  <title>BlogRails-kenams</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="normalize.css.scss">
+  <link rel="stylesheet" type="text/css" href="posts_wrapper.css.scss">
+  <link rel="stylesheet" type="text/css" href="welcome.css.scss">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main_navigation" class="clearfix">
+		<a href="#" class="name">Kenams</a>
+		<nav>
+			<%= link_to "Articles", posts_path %>
+			<a href="#">Projects</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
 
 <%= yield %>
 
